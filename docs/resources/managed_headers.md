@@ -13,6 +13,8 @@ The [Cloudflare Managed Headers](https://developers.cloudflare.com/rules/transfo
 allows you to add or remove some predefined headers to one's
 requests or origin responses.
 
+
+
 ## Example Usage
 
 ```terraform
@@ -39,6 +41,8 @@ resource "cloudflare_managed_headers" "example" {
 - `zone_id` (String) The zone identifier to target for the resource.
 
 ### Optional
+
+-> You can find which headers are available with the [List Managed Transforms API](https://developers.cloudflare.com/api/operations/managed-transforms-list-managed-transforms).
 
 - `managed_request_headers` (Block Set) The list of managed request headers. (see [below for nested schema](#nestedblock--managed_request_headers))
 - `managed_response_headers` (Block Set) The list of managed response headers. (see [below for nested schema](#nestedblock--managed_response_headers))
